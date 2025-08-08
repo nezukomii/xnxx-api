@@ -1,12 +1,11 @@
-name = "xnxx-video-api"
+name = "xnxx-api"
 main = "src/index.js"
 compatibility_date = "2025-08-07"
-compatibility_flags = ["nodejs_compat"]
 
 [vars]
 ENVIRONMENT = "production"
 
 # Configuración para desarrollo local
 [env.development]
-name = "xnxx-video-api-dev"
+name = "xnxx-api-dev"
 vars = { ENVIRONMENT = "development" }
