@@ -1,0 +1,26 @@
+{
+  "name": "xnxx-video-api",
+  "version": "1.0.0",
+  "description": "API para buscar videos en XNXX y extraer enlaces MP4",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish",
+    "tail": "wrangler tail",
+    "test": "wrangler dev --local"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "api",
+    "video",
+    "scraping"
+  ],
+  "author": "DeltaByte",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.15.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
