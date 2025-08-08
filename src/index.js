@@ -6,9 +6,11 @@
 // API para buscar videos en XNXX.com
 // Desplegable en Cloudflare Workers
 
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
-})
+export default {
+  async fetch(request, env, ctx) {
+    return handleRequest(request)
+  }
+}
 
 async function handleRequest(request) {
   // Configurar CORS
